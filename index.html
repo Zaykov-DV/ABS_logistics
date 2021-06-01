@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="navigation__container">
+        <nav class="navigation">
+            <img class="navigation__logo" src="./img/logo.png" alt="logo">
+            <div class="navigation__links">
+                <a href="#" class="link navigation__link">О компании</a>
+                <a href="#" class="link navigation__link">Услуги</a>
+                <a href="#" class="link navigation__link">Тарифы</a>
+                <a href="#" class="link navigation__link">Партнерам</a>
+                <a href="#" class="link navigation__link">Новости</a>
+                <a href="#" class="link navigation__link">Контакты</a>
+            </div>
+            <div class="navigation__contacts">
+                <a href="tel:+73439998877" class="link contact__tel">+7 (343) 999-88-77</a>.
+                <button class="button contact__button" id="btnContact">
+                    <img class="contact__icon" src='./img/icons/FAPhone.png' alt="tel">
+                    <span>Заказать звонок</span>
+                </button>
+                <!-- POP-UP FORM -->
+                <div id="popupForm" class="popup">
+                    <!--  POP-UP content -->
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <div class="feedback__container">
+                            <div class="feedback__title-wrapper">
+                                <h2 class="heading__title feedback__title">Свяжитесь с нами</h2>
+                            </div>
+                            <form class="feedback__form">
+                                <div class="inputs__container">
+                                    <label class="feedback__label">
+                                        <input class="feedback__input" type="text" required placeholder="Ваше имя*">
+                                    </label>
+                                    <label class="feedback__label">
+                                        <input class="feedback__input feedback__input-tel" type="tel" required placeholder="Телефон*">
+                                    </label>
+                                    <label class="feedback__label">
+                                        <input class="feedback__input" type="email" placeholder="E-mail">
+                                    </label>
+                                </div>
+                                <textarea class="feedback__message" name="message" id="popup_message" rows="3" required
+                                          placeholder="Сообщение*"></textarea>
+                                <div class="button-wrapper">
+                                    <button class="button feedback__button">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- // end POP-UP content -->
+                </div>
+            </div>
+            <div class="navigation__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="header__slider">
+                <div class="swiper__icon-wrapper">
+                    <img src="./img/icons/icon-slider.png" alt="slider" class="swiper__icon">
+                </div>
+                <div class="swiper-slides">
+                    <!--SLIDE 1-->
+                     <div class="swiper-slide">
+                                <div class="swiper__image-wrapper">
+                                    <img class="swiper__image" src="./img/slider1.png" alt="slider">
+                                    <div class="swiper-link-wrapper">
+                                         <a class="link swiper__title" href="#">Железнодорожные&nbsp;</a>
+                                             <a class="link swiper__text" href="#"> перевозки</a>
+                                    </div>
+                                    <div class="swiper__description-wrapper">
+                                        <img class="swiper__description-icon" src="./img/icons/plus.png" alt="icon">
+                                        <p class="swiper__description-text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    <!--SLIDE 2-->
+                    <div class="swiper-slide">
+                        <div class="swiper__image-wrapper">
+                            <img class="swiper__image" src="./img/slider2.png" alt="slider">
+                            <div class="swiper-link-wrapper">
+                                <a class="link swiper__title" href="#">Контейнерные&nbsp;<small class="swiper__text">грузоперевозки</small></a>
+                            </div>
+                            <div class="swiper__description-wrapper">
+                                <img class="swiper__description-icon" src="./img/icons/plus.png" alt="icon">
+                                <p class="swiper__description-text">Наиболее выгодный вариант доставки, дающий максимальные гарантии сохранности груза в пути следования.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--NAV-->
+            <div class="swiper__buttons-wrapper">
+                <div class="swiper__button-prev"></div>
+                <div class="swiper__button-next"></div>
+            </div>
+            </div>
+    </div>
+
+    <div class="features__items-wrapper">
+        <ul class="features__items">
+            <li class="features__item">
+                <img class="features__icon" src="./img/icons/time.png" alt="icon">
+                <p class="features__text">
+                    Доставляем точно в срок
+                </p>
+            </li>
+            <li class="features__item">
+                <img class="features__icon" src="./img/icons/map.png" alt="icon">
+                <p class="features__text">
+                    Работаем по всей России
+                </p>
+            </li>
+            <li class="features__item">
+                <img class="features__icon" src="./img/icons/weight.png" alt="icon">
+                <p class="features__text">
+                    Доставляем грузы от 1 кг.
+                </p>
+            </li>
+            <li class="features__item">
+                <img class="features__icon" src="./img/icons/online.png" alt="icon">
+                <p class="features__text">
+                    Отслеживание груза Online
+                </p>
+            </li>
+            <li class="features__item">
+                <img class="features__icon" src="./img/icons/tarif.png" alt="icon">
+                <p class="features__text">
+                    Выгодные тарифные планы
+                </p>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+    <section class="section__content">
+        <div class="content__container">
+            <div class="title-wrapper">
+                <h1 class="content__title">Как мы работаем</h1>
+            </div>
+            <div class="desc__container">
+                <p class="content__desc" style="margin-bottom: 40px;">
+                    Размещение достижимо в разумные сроки. Спонсорство порождает связанный отраслевой стандарт, повышая
+                    конкуренцию. Общество потребления без оглядки на авторитеты оправдывает SWOT-анализ, оптимизируя
+                    бюджеты.
+                </p>
+                <p class="content__desc">
+                    Рыночная ситуация изящно отражает рекламный макет, не считаясь с затратами. Перераспределение
+                    бюджета
+                    переворачивает product placement, осознавая социальную ответственность бизнеса. Повышение жизненных
+                    стандартов амбивалентно. Маркетингово-ориентированное издание концентрирует диктат потребителя,
+                    полагаясь на
+                    инсайдерскую информацию. Рейтинг традиционно развивает диктат потребителя.
+                </p>
+            </div>
+        </div>
+        <div class="delivery__container">
+            <div class="delivery__head-wrapper">
+                <div class="delivery__title-wrapper">
+                    <h2 class="delivery__title">Рассчет доставки</h2>
+                </div>
+                    <div class="delivery__price-full-wrapper">
+                        <p class="delivery__price" style="text-transform: uppercase;">Итого:</p>
+                        <div class="delivery__price-wrapper">
+                            <p class="delivery__price delivery_price-large" id="total-price" style="margin-right: 12px">0</p>
+                            <p class="delivery__price">руб.</p>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="delivery__form-wrapper">
+                <form class="delivery__form">
+                    <label class="delivery__text delivery__cities" for="fromWhere">Откуда:
+                        <select class="delivery__city" name="fromWhere" id="fromWhere">
+                            <option value="0"disabled>Выберите адрес от куда нужно забрать груз</option>
+                            <option value="msc">Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="ekb" selected>Екатеринбург</option>
+                        </select>
+                    </label>
+                    <label class="delivery__text delivery__cities" for="whereTo">Куда:
+                        <select class="delivery__city"  name="whereTo" id="whereTo">
+                            <option value="0" disabled>Выберите адрес до куда нужно доставить груз</option>
+                            <option value="msc" selected>Москва</option>
+                            <option value="spb">Санкт-Петербург</option>
+                            <option value="ekb">Екатеринбург</option>
+                        </select>
+                    </label>
+
+                    <div class="delivery__range-wrapper">
+                    <label class="delivery__text" for="weight">Вес груза
+                        <input id="weight" type="range" class="delivery__range" min="1" max="500" step="1" value="10"/>
+                    </label>
+                        <div class="weight__total-wrapper">
+                            <span class="weight-total">0</span> <span>кг</span>
+                        </div>
+
+                    </div>
+
+                    <div class="delivery__options-wrapper">
+                        <div class="delivery__options">
+                            <div class="delivery__option">
+                                <input type="radio" id="courier" name="delivery" class="option__input" value="courier" checked>
+                                <label class="option__label delivery__text" for="courier">Забрать курьером</label>
+                            </div>
+                            <div class="delivery__option">
+                                <input type="radio" id="pickup" name="delivery" class="option__input" value="pickup">
+                                <label class="option__label delivery__text" for="pickup">Привезу сам</label>
+                            </div>
+                        </div>
+
+                        <div class="delivery__insurance">
+                            <input type="checkbox" id="insurance" class="insurance__input" checked>
+                            <label  class="insurance__label delivery__text" for="insurance"> Страхование груза </label>
+                        </div>
+                    </div>
+                    <div class="delivery__button-wrapper">
+                        <button class="button contact__button delivery__button" id="buttonTotal">Рассчитать стоимость</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section__news">
+        <div class="news__container">
+            <div class="news__links">
+                <div class="news__title-wrapper">
+                    <h2 class="heading__title news__title">Новости </h2>
+                </div>
+                <!-- NAV NEWS -->
+                <div class="news__buttons-wrapper">
+                    <div class="news__link-wrapper">
+                        <a class="link news__link" href="#">Все новости</a>
+                    </div>
+                    <div class="news__button-prev"></div>
+                    <div class="news__button-next"></div>
+                </div>
+            </div>
+            <div class="news__cards">
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image1.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">10</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image2.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">5</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Торсионный гамма-квант глазами современников</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image3.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">24</p>
+                            <p class="date__text">марта</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Экранированный пульсар — актуальная национальная задача</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image4.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">10</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Чтобы понизить стоимость перевозки груза очень часто используется сборный тип доставки...</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image1.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">10</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Циркулирующий гидродинамический удар: колебание или взвесь?</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image2.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">5</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Торсионный гамма-квант глазами современников</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image3.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">24</p>
+                            <p class="date__text">марта</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Экранированный пульсар — актуальная национальная задача</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="card__image" src="./img/card-image4.jpg" alt="">
+                    <div class="card__content">
+                        <div class="card__date">
+                            <p class="date__text date__text-large">10</p>
+                            <p class="date__text">апреля</p>
+                        </div>
+                        <div class="text-wrapper">
+                            <a href="#" class="link">
+                                <div class="card__desc">
+                                    <p class="card__text">Чтобы понизить стоимость перевозки груза очень часто используется сборный тип доставки...</p>
+                                </div>
+                                <div class="card__link" href="#">
+                                    <img class="link__icon" src="./img/icons/more.png" alt="icon">
+                                    <p class="card__text link__text">Подробно</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section__content">
+        <div class="feedback__container">
+            <div class="feedback__title-wrapper">
+                <h2 class="heading__title feedback__title">Свяжитесь с нами</h2>
+            </div>
+            <form class="feedback__form">
+                <div class="feedback__inputs-wrapper">
+                <div class="inputs__container">
+                    <label class="feedback__label">
+                        <input class="feedback__input" type="text" required placeholder="Ваше имя*">
+                    </label>
+                    <label class="feedback__label">
+                        <input class="feedback__input feedback__input-tel" type="tel" required placeholder="Телефон*">
+                    </label>
+                    <label class="feedback__label">
+                        <input class="feedback__input" type="email" placeholder="E-mail">
+                    </label>
+                </div>
+                <textarea class="feedback__message" name="message" id="message" rows="3" required
+                          placeholder="Сообщение*"></textarea>
+                </div>
+                <div class="button-wrapper">
+                    <button class="button feedback__button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="section__content">
+        <div class="contacts__container">
+            <div class="contacts__container-wrapper">
+                <div class="contacts__title-wrapper">
+                    <h2 class="heading__title contacts__title">Контакты</h2>
+                </div>
+                <div class="contacts__subtitle-wrapper">
+                    <h3 class="contacts__subtitle">Наш офис</h3>
+                </div>
+                <div class="contacts__text-wrapper">
+                    <p class="contacts__text">Россия, 620014, Екатеринбург <br>
+                        ул. Маршала Жукова, 10</p>
+                </div>
+                <div class="contacts__subtitle-wrapper">
+                    <h3 class="contacts__subtitle">Вы можете связаться с нами</h3>
+                </div>
+                <div class="contacts__text-wrapper">
+                    <a href="tel:+73439998877" class="link contacts__text">Т: +7 (343) 999-88-77</a> <br>
+                    @: <a href="mailto:example@mail.com" class="link contacts__text">example@mail.com</a>
+                </div>
+                <div class="feedback__button-wrapper">
+                    <button class="button feedback__button">Заказать звонок</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="map__container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.2927972574294!2d60.58802231616929!3d56.840921380858326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e5fcd1f1659%3A0xa0a676cab915a96!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCAxMCwg0JXQutCw0YLQtdGA0LjQvdCx0YPRgNCzLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC7LiwgNjIwMDE0!5e0!3m2!1sru!2sru!4v1622282392458!5m2!1sru!2sru"
+                    width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <nav class="footer__navigation-container">
+            <img class="navigation__logo" src="./img/logo-grey.png" alt="logo">
+            <copyright class="footer__text">© 2018 ABC Logistics. Все права защищены</copyright>
+            <div class="footer__links-wrapper">
+                <a href="#" class="link footer__link footer__text">Политика конфиденциальности</a>
+                <a href="#" class="link footer__link footer__text">Карта сайта</a>
+            </div>
+    </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
